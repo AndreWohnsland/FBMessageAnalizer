@@ -263,7 +263,7 @@ def plot_day(df1, df2, name1, name2, col1='blue', col2='pink', use_len=False):
     plt.get_current_fig_manager().window.state('zoomed')
 
 def plot_total(df1, df2, name1, name2, col1='blue', col2='pink', use_len=False, area=False):
-    """[summary]
+    """Plots the total data summarized at each day.
     
     Args:
         df1 (dataframe): Dataframe with the first person data.
@@ -351,7 +351,7 @@ def length(x):
     return len(x)
 
 def start_visualisation(name1, name2, col1='blue', col2='pink', n=7):
-    """[summary]
+    """Start the different steps to process data from DB and visulize it.
     
     Args:
         name1 (string): Name of the first person.
