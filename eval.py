@@ -12,7 +12,7 @@ def extract_data_to_database(filename, searchnames=None):
     """Extracts all the chat for both person in the chat
     
     Args:
-        filename (string): filename
+        filename (str): filename
         searchnames (tuple, optional): Two names (Tuple of two strings) to search for. Only for group conversations. Defaults to None.
     """
     # gets the connection to the db
@@ -95,8 +95,8 @@ def read_in_data(name1, name2):
     """Get all the needed data from the DB and reads it into a Datastructur
     
     Args:
-        name1 (string): Full name of the first person.
-        name2 (string): Full name of the second person.
+        name1 (str): Full name of the first person.
+        name2 (str): Full name of the second person.
 
     Returns:
         tuple: Tuple of both dataframes with data of date and text accordingly
@@ -154,8 +154,8 @@ def plot_most_used_emojis(df1, df2, name1, name2, col1='blue', col2='pink', n=7)
     """Plots a bar plot of the top used emojis
     
     Args:
-        name1 (string): Name of the first person.
-        name2 (string): Name of the second person.
+        name1 (str): Name of the first person.
+        name2 (str): Name of the second person.
         col1 (str, optional): Color of the first bar. Defaults to 'blue'.
         col2 (str, optional): Color of the second bar. Defaults to 'pink'.
         n (int, optional): Number of top used emojis. Defaults to 7.
@@ -178,8 +178,8 @@ def get_most_used_emojis(df1, df2, name1, name2, n=7):
     """Summarize the top n most used emojis
     
     Args:
-        name1 (string): Name of first person.
-        name2 (string): name of second person.
+        name1 (str): Name of first person.
+        name2 (str): name of second person.
         n (int, optional): Number of top used emojis. Defaults to 7.
     
     Returns:
@@ -231,8 +231,8 @@ def plot_day(df1, df2, name1, name2, col1='blue', col2='pink', use_len=False):
     Args:
         df1 (dataframe): Dataframe with the first person data.
         df2 (dataframe): Dataframe with the seconf person data.
-        name1 (string): Name of the first person.
-        name2 (string): Name of the second person.
+        name1 (str): Name of the first person.
+        name2 (str): Name of the second person.
         col1 (str, optional): Color for the first person. Defaults to 'blue'.
         col2 (str, optional): Color for the second person. Defaults to 'pink'.
         use_len (bool, optional): Condition for unsing then len or the count. Defaults to False.
@@ -268,8 +268,8 @@ def plot_total(df1, df2, name1, name2, col1='blue', col2='pink', use_len=False, 
     Args:
         df1 (dataframe): Dataframe with the first person data.
         df2 (dataframe): Dataframe with the seconf person data.
-        name1 (string): Name of the first person.
-        name2 (string): Name of the second person.
+        name1 (str): Name of the first person.
+        name2 (str): Name of the second person.
         col1 (str, optional): Color for the first person. Defaults to 'blue'.
         col2 (str, optional): Color for the second person. Defaults to 'pink'.
         use_len (bool, optional): Condition for unsing then len or the count. Defaults to False.
@@ -319,7 +319,7 @@ def infotext(text):
     """Nicely formats the text for the output
     
     Args:
-        text (string): Output text.
+        text (str): Output text.
     """
     str_fill = "-"
     print(f"{str_fill} {text} .... {str_fill}")
@@ -328,8 +328,8 @@ def print_attributes(name1, name2, name1_text, name2_text):
     """Print out the attributes after the parsing of the html data.
     
     Args:
-        name1 (string): First persons name
-        name2 (string): Second persons name
+        name1 (str): First persons name
+        name2 (str): Second persons name
         name1_text (list): List of all the messages of first person
         name2_text (list): List of all the messages of the second person
     """
@@ -354,8 +354,8 @@ def start_visualisation(name1, name2, col1='blue', col2='pink', n=7):
     """Start the different steps to process data from DB and visulize it.
     
     Args:
-        name1 (string): Name of the first person.
-        name2 (string): Name of the second person.
+        name1 (str): Name of the first person.
+        name2 (str): Name of the second person.
         col1 (str, optional): Color for the first person. Defaults to 'blue'.
         col2 (str, optional): Color for the second person. Defaults to 'pink'.
         n (int, optional): Number of top n Emojis to plot. Defaults to 7.
