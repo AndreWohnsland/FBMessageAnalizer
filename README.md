@@ -6,9 +6,9 @@ First thing you have to do is to request your chat data from FB in the HTML form
 
 First extract the data into the database with `extract_data_to_database("yourname.html")` - this command needs only to be run once, otherwise there will be multiple entries into the DB. This process may take some time depending on the length of your file. In my case the classes of the three needed divs are `_3-96 _2pio _2lek _2lel`, `_3-96 _2let` and `_3-94 _2lem` you can change them in the `extract_data_to_database` if they are different in your HTML file.
 
-Once the data is extracted into the database you run `start_visualisation("Name1", "Name2", col1="blue", col2="red")` with `Name1` and `Name2` as the exact names of both participants. The `generate_df_data` method got a `pd.to_datetime(df.date, format='%d.%m.%Y, %H:%M')` function inside it. The format from your data may differ and i would recommend checking your format before.
+Once the data is extracted into the database you run `start_visualisation("Name1", "Name2", col1="blue", col2="red")` with `Name1` and `Name2` as the exact names of both participants. The `generate_df_data` method got a `pd.to_datetime(df.date, format='%d.%m.%Y, %H:%M')` function inside it. The format from your data may differ and I would recommend checking your format before.
 
-Of course you can use the standard methods (for getting the data and generating the dataframe) and use them in you own scripts or data exploration to generate other various plots to visualize some results or chatting behavior. The existing ones in this script is just a glimpse what you can do with the data and I strongly recommend to test other plots, to gain more insight into the data.
+Of course you can use the standard methods (for getting the data and generating the dataframe) and use them in your own scripts or data exploration to generate other various plots to visualize some results or chatting behavior. The existing ones in this script are just a glimpse what you can do with the data and I strongly recommend to test other plots, to gain more insight into the data.
 
 ## Minimal Requirements
 
